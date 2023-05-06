@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
 
 function CategoryContainer({ category, name, type }) {
   const classes = useStyles();
-
   return (
     <Grid key={name} id={name}>
       {category?.items?.length > 0 && (

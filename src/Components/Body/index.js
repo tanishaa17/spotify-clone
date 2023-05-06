@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useCallback, useEffect, useState } from 'react';
 import { useDataLayerValue } from '../../DataLayer';
 import Spinner from '../Spinner';
 import './body.css';
+import { IndividualCategory } from '../CategoryContainer/IndividualCategory';
 
 const BodyHeader = lazy(() => import(/*BodyHeader*/ '../BodyHeader'));
 const CategoryContainer = lazy(() =>
@@ -96,6 +97,7 @@ function Body() {
           type={1}
         />
       </Suspense>
+      {/* <IndividualCategory /> */}
     </div>
   );
 }
